@@ -351,7 +351,7 @@ export default class ReferenceList extends Plugin {
         ) {
           view?.setMessage(t('Cannot connect to Zotero'));
         } else {
-          view?.setViewContent(bib);
+          view?.setViewContent?.(bib);
         }
       } catch (e) {
         console.error(e);
